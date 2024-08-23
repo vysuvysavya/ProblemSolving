@@ -8,6 +8,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+--brute force 
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
        int l=0;
@@ -37,3 +38,18 @@ class Solution {
         return head;
     }
 }
+Time Complexity: O(L)+O(L-N), We are calculating the length of the linked list and then iterating up to the (L-N)th node of the linked list, where L is the total length of the list.
+
+--optimal 
+
+ ListNode f=head,s=head;
+       for(int i = 1;i<=n; i++) f = f.next;
+       if (f == null) return head.next;  
+       while(f.next!=null) {
+        s = s.next;
+        f = f.next;
+       }
+       s.next = s.next.next;
+       return head;
+
+Time Complexity: O(N)
