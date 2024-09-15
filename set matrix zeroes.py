@@ -24,6 +24,39 @@ class Solution:
             for row in matrix:
                 row[0] = 0
   =======================================
+
+
+def markRow(matrix, n, m, i):
+    # set all non-zero elements as -1 in the row i:
+    for j in range(m):
+        if matrix[i][j] != 0:
+            matrix[i][j] = -1
+
+def markCol(matrix, n, m, j):
+    # set all non-zero elements as -1 in the col j:
+    for i in range(n):
+        if matrix[i][j] != 0:
+            matrix[i][j] = -1
+
+def zeroMatrix(matrix, n, m):
+    # Set -1 for rows and cols
+    # that contains 0. Don't mark any 0 as -1:
+    for i in range(n):
+        for j in range(m):
+            if matrix[i][j] == 0:
+                markRow(matrix, n, m, i)
+                markCol(matrix, n, m, j)
+    
+    # Finally, mark all -1 as 0:
+    for i in range(n):
+        for j in range(m):
+            if matrix[i][j] == -1:
+                matrix[i][j] = 0
+    
+    return matrix
+
+====================================================================================
+
 Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.
 
 You must do it in place.
