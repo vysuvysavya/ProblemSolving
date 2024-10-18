@@ -1,4 +1,5 @@
-Given a sorted array arr[] of size n without duplicates, and given a value x. Floor of x is defined as the largest element k in arr[] such that k is smaller than or equal to x. Find the index of k(0-based indexing).
+Given a sorted array arr[] of size n without duplicates, and given a value x.
+    Floor of x is defined as the largest element k in arr[] such that k is smaller than or equal to x. Find the index of k(0-based indexing).
 
 Examples
 
