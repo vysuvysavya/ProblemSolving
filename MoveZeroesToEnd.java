@@ -25,6 +25,7 @@ int temp , j = 0;
         }
         for (int i = j; i < nums.length; i++) nums[i]=0;
 
+===================================
 
 nums =
 [0,1,0,3,12]
