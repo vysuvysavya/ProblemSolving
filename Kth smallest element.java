@@ -7,5 +7,5 @@
             }
         }
         
- -       The root of the heap is the k-th smallest element
+ -------The root of the heap is the k-th smallest element
         return maxHeap.peek();
