@@ -43,6 +43,7 @@ class Solution:
             else:
                 break
         num *= sign
+-----to satisfy constraints
         mx, mn = 2**31 - 1, -2**31
         if num > mx:
             return mx
