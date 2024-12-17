@@ -20,3 +20,14 @@ This ensures both pointers traverse an equal total distance before meeting at th
 
 Time Complexity: O(m + n)
 Space Complexity: O(1)
+
+
+===
+brute force : we can try to store the nodes(not data) of first ll in the hashmap and start traversing the second LL and check if hashmap already contains the node..
+              this will use extra memory
+better than brute force : first find length of both lists
+                         find the difference btwn length of lists
+                         traverse the lengthy list so that it will be of same length as of the shorter and both will be of same length now.. next start traverse 
+                          until both pointers met. but tc is m+n+n or m+n+m
+
+ 
