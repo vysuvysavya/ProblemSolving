@@ -7,6 +7,7 @@ The number of nodes in the linked list should decrease by one.
 All the values before node should be in the same order.
 All the values after node should be in the same order.
 
+All the values of the linked list are unique, and it is guaranteed that the given node node is not the last node in the linked list.
 =====
 class Solution {
     public void deleteNode(ListNode node) {
